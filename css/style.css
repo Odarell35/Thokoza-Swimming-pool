@@ -884,5 +884,7 @@ a:focus {
 /* nav bar ka about page*/
 .about-nav{
   color: #000000 !important;
+  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  height: 10vh !important;
 }
 /*end ka navbar ka about page*/
