@@ -67,10 +67,10 @@ a {
 }
 .clubName{
   font-family: "Lora", serif;
-  font-size: 175px;
+  font-size: 75px;
   font-weight: bold;
  color: #071952; 
- background-image: -webkit-linear-gradient(0deg, #071952 41%, #007bff 57%, #2d3b6b 68%);
+ background-image: -webkit-linear-gradient(0deg, white 41%, white 57%, white 68%);
  background-clip: text;
 -webkit-background-clip: text;
  -text-fill-color: transparent; 
