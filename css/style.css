@@ -12,7 +12,6 @@ body {
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: #ffffff;
-  height: 200vh;
   position: relative;
 }
 body:before {
@@ -955,7 +954,7 @@ a:focus {
     linear-gradient(to bottom right, var(--primary), var(--secondary));
   background-position: left 0px bottom 0px, right 0px top 50%, center top;
   background-repeat: no-repeat;
-  width: 80%;
+  width: 100%;
 }
 
 .footer .btn.btn-social {
@@ -1037,3 +1036,64 @@ a:focus {
   height: 10vh !important;
 }
 /*end ka navbar ka about page*/
+/* membership section */
+.headings {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 50px;
+  display: flex;
+}
+.head-1 {
+  color: #0cc0df;
+  text-align: center;
+  font-family: Caveat, sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 65px;
+}
+.m-para {
+  /* padding-left: 45px;
+  padding-right: 45px; */
+  color: var(--grey);
+  text-align: center;
+  margin-top: 50px;
+  padding-left: 112px;
+  padding-right: 112px;
+  font-family: Nanum Gothic, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+}
+.type-1,
+.type-2 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 500px;
+  margin: 5px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Nanum Gothic, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  display: block;
+
+  box-shadow: 1px 1px 11px -3px #000;
+}
+
+.type-members {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+}
+.summary {
+  background-color: #0cc0df;
+  border-bottom: #212529 solid 5px;
+}
