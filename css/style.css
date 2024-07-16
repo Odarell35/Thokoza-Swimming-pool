@@ -459,7 +459,7 @@ a:focus {
 }
 
 .do_section .do_container .box .img-box {
-  width: 120px;
+  width: 150px;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,12 +470,12 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #353434;
+  background-color: #ffffff;
   border-radius: 100%;
 }
 
 .do_section .do_container .box .img-box img {
-  width: 45px;
+  width: 250px;
 }
 
 .do_section .do_container .box .detail-box {
@@ -483,7 +483,7 @@ a:focus {
 }
 
 .do_section .do_container .box:hover .img-box {
-  background-color:#071952;
+  background-color:#d0d4e0;
 }
 
 .do_section .do_container .arrow_bg::before {
@@ -514,7 +514,6 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .who_section .img-box img {
   width: 100%;
 }
