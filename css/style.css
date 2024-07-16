@@ -646,18 +646,6 @@ a:focus {
   background-size: cover;
 }
 
-.do_section .do_container .arrow-start::before {
-  background-image: url(../images/arrow-start.png);
-}
-
-.do_section .do_container .arrow-middle::before {
-  background-image: url(../images/arrow-middle.png);
-}
-
-.do_section .do_container .arrow-end::before {
-  background-image: url(../images/arrow-end.png);
-}
-
 .who_section .row {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1037,3 +1025,13 @@ a:focus {
   height: 10vh !important;
 }
 /*end ka navbar ka about page*/
+/* membership */
+.membership {
+  background: rgb(183, 244, 255);
+  background: radial-gradient(
+    circle,
+    rgba(183, 244, 255, 1) 0%,
+    rgba(12, 192, 223, 1) 100%,
+    rgba(12, 192, 223, 1) 100%
+  );
+}
