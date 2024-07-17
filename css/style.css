@@ -1147,3 +1147,46 @@ a:focus {
   font-family: Nanum Gothic, sans-serif;
   font-weight: 400;
 }
+.heading-2 {
+  color: rgb(255, 217, 0);
+  text-align: center;
+  margin-top: 35px;
+  padding-left: 44px;
+  padding-right: 44px;
+  font-size: 34px;
+  font-family: Nanum Gothic, sans-serif;
+  font-weight: 700;
+}
+.m-para-2 {
+  color: grey;
+  text-align: center;
+  margin-top: 35px;
+  padding-left: 112px;
+  padding-right: 112px;
+  font-family: Nanum Gothic, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+.explanation-row {
+  margin-top: 20px;
+}
+.reason {
+  color: grey;
+  text-align: center;
+  margin-top: 10px;
+  padding-left: 44px;
+  padding-right: 44px;
+  font-size: 16px;
+  font-family: Nanum Gothic, sans-serif;
+  font-weight: 400;
+  list-style: georgian;
+}
+.list-reasons {
+  margin-top: 10px;
+  text-align: center;
+  padding-left: 54px;
+  padding-right: 40%;
+  font-size: 25px;
+  list-style: square;
+  margin-left: 35%;
+}
