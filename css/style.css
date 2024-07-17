@@ -1024,3 +1024,126 @@ a:focus {
   height: 10vh !important;
 }
 /*end ka navbar ka about page*/
+/* membership section */
+.headings {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 50px;
+  display: flex;
+}
+.head-1 {
+  color: #0cc0df;
+  text-align: center;
+  font-family: Caveat, sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 65px;
+}
+.m-para {
+  /* padding-left: 45px;
+  padding-right: 45px; */
+  color: var(--grey);
+  text-align: center;
+  margin-top: 50px;
+  padding-left: 112px;
+  padding-right: 112px;
+  font-family: Nanum Gothic, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+}
+.type-1,
+.type-2 {
+  /* text-align: center; */
+  background-color: rgba(0, 0, 0, 0);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 500px;
+  margin: 5px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* font-family: Nanum Gothic, sans-serif; */
+  /* font-size: 25px;
+  font-weight: 700; */
+  line-height: 30px;
+  display: block;
+  box-shadow: 1px 1px 11px -3px #000;
+}
+
+.type-members {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  margin-top: 35px;
+}
+.summary {
+  background-color: #0cc0df;
+  border-bottom: #212529 solid 5px;
+  list-style: none;
+  cursor: pointer;
+}
+.head-type-1 {
+  color: white;
+  text-align: center;
+  font-family: Nanum Gothic, sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+}
+.summary p {
+  color: grey;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: Nanum Gothic, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.unordered-list {
+  color: grey;
+  margin-top: 20px;
+  padding-left: 44px;
+  padding-right: 44px;
+  font-size: 16px;
+  list-style: square;
+}
+.small-head {
+  color: blue;
+  margin-top: 10px;
+  padding-left: 44px;
+  padding-right: 44px;
+  font-size: 25px;
+  font-family: Nanum Gothic, sans-serif;
+  font-weight: 700;
+}
+.ordered-list {
+  color: grey;
+  margin-top: 20px;
+  padding-left: 44px;
+  padding-right: 44px;
+  font-size: 16px;
+  list-style: decimal;
+}
+.form-1 {
+  background-color: #0cc0df;
+  text-align: center;
+  display: block;
+  width: 200px;
+  margin: 5px auto;
+  font-family: Nanum Gothic, sans-serif;
+  font-weight: 700;
+}
+.point {
+  color: grey;
+  margin-top: 10px;
+  padding-left: 44px;
+  padding-right: 44px;
+  font-size: 16px;
+  font-family: Nanum Gothic, sans-serif;
+  font-weight: 400;
+}
