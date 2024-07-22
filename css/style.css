@@ -394,11 +394,11 @@ a:hover {
 .para-type-1 {
   color: grey;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
   padding-left: 25px;
   padding-right: 25px;
   font-family: Nanum Gothic, san-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 30px;
 }
@@ -509,8 +509,6 @@ a:hover {
   color: grey;
   text-align: center;
   margin-top: 10px;
-  padding-left: 44px;
-  padding-right: 44px;
   font-size: 16px;
   font-family: Nanum Gothic, sans-serif;
   font-weight: 400;
@@ -518,12 +516,11 @@ a:hover {
 }
 .list-reasons {
   margin-top: 10px;
-  text-align: center;
-  padding-left: 54px;
-  padding-right: 40%;
-  font-size: 25px;
+  font-size: 20px;
   list-style: square;
-  margin-left: 35%;
+  margin-left: 10%;
+  text-align: center;
+  list-style: none;
 }
 
 /* membership section on index.html */
@@ -533,4 +530,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   height: 30vh;
+}
+b {
+  color: #000;
 }
