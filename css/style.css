@@ -66,10 +66,8 @@ a:hover {
   text-decoration: none !important;
 }
 
-
 /*end header section*/
 /* carousel */
-
 
 .do_section .heading_container {
   -webkit-box-align: center;
@@ -136,22 +134,27 @@ a:hover {
   z-index: 3;
   background-size: cover;
 }
-.we_offer{
+.we_offer {
   position: relative;
-  background-image: url(../images/bg\ \ \(3\).jpg);
+  background-image: url(../images/bg\\\(3\).jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom: 50px;
 }
-.we_offer::before{
-  content: '';
+.we_offer::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (last value) as needed */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the opacity (last value) as needed */
 }
 .work_section .work_container {
   display: -webkit-box;
@@ -329,7 +332,6 @@ a:hover {
   font-weight: 500;
 }
 
-
 /* footer section*/
 
 .container-xxl {
@@ -368,25 +370,38 @@ a:hover {
   line-height: 30px;
   text-decoration: none;
 }
-.type-1,
-.type-2 {
+.type-1 {
   /* text-align: center; */
-  background-color: rgba(0, 0, 0, 0);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 500px;
   margin: 5px auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
   /* font-family: Nanum Gothic, sans-serif; */
   /* font-size: 25px;
   font-weight: 700; */
   line-height: 30px;
-  display: block;
+  display: flex;
   box-shadow: 1px 1px 11px -3px #000;
 }
-
+.back-img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.para-type-1 {
+  color: grey;
+  text-align: center;
+  margin-top: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: Nanum Gothic, san-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
 .type-members {
   flex-direction: row;
   justify-content: center;
@@ -397,10 +412,15 @@ a:hover {
   margin-top: 35px;
 }
 .summary {
+  background-image: url(../images/design2.png);
   background-color: #0cc0df;
-  border-bottom: #212529 solid 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   list-style: none;
   cursor: pointer;
+  width: 100%;
+  padding: 25px 0 0 0;
 }
 .head-type-1 {
   color: white;
@@ -507,7 +527,7 @@ a:hover {
 }
 
 /* membership section on index.html */
-.membership{
+.membership {
   background-image: url(../images/membershipbg.jpg);
   background-position: center;
   background-repeat: no-repeat;
