@@ -35,110 +35,273 @@
       src="https://kit.fontawesome.com/1931b068d0.js"
       crossorigin="anonymous"
     ></script>
-
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="../fonts/icomoon/style.css" />
-    <!--   owl carousel style -->
-    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <!-- tailwind -->
     <link href="./output.css" rel="stylesheet" />
     <!-- aos tailwind -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- alpine -->
+     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+     <!-- icons -->
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"> 
+
   </head>
 
   <body>
     <!-- header section strats -->
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
 
-    <header class="site-navbar" role="banner">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-11 col-xl-2">
-            <h1 class="mb-0 site-logo">
-              <a href="index.html" class="text-white mb-0"
-                ><img class="logo" src="../images/logo.png" alt="club logo"
-              /></a>
-            </h1>
-          </div>
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav
-              class="site-navigation position-relative text-right"
-              role="navigation"
-            >
-              <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li class="active">
-                  <a href="index.html"><span>Home</span></a>
-                </li>
-                <li class="has-children">
-                  <a href="about.html"><span>Programs</span></a>
-                  <ul class="dropdown arrow-top">
-                    <li><a href="#">WATER Polo</a></li>
-                    <li><a href="#">Water Safety</a></li>
-                    <li><a href="#">Individual Swimming</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="listings.html"><span>We Offer</span></a>
-                </li>
-                <li>
-                  <a href="listings.html"><span>Membership</span></a>
-                </li>
-                <li>
-                  <a href="about.html"><span>About</span></a>
-                </li>
-                <li>
-                  <a href="blog.html"><span>Support</span></a>
-                </li>
-                <li>
-                  <a href="contact.html"><span>Contact</span></a>
-                </li>
-                <li>
-                  <a href="listings.html"><span>Gallery</span></a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+    <div i>
+    <header class="w-dvw absolute top-0 left-1/2 -translate-x-1/2 z-[1000] py-4">
+      	<nav class="relative px-4 py-4 flex justify-between items-center bg-transparent">
+		<a class="text-3xl font-bold leading-none" href="#">
+      <img class="h-10" src="../images/logo.png" alt="logo">
+		</a>
+		<div class="lg:hidden">
+			<button class="navbar-burger flex items-center text-blue-600 p-3">
+				<svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<title>Mobile menu</title>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+				</svg>
+			</button>
+		</div>
+		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+			<li><a class="text-sm text-blue-500 bg-gray-50 font-bold py-2 px-6 rounded-xl hover:text-gray-500" href="#">Home</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+				</svg>
+			</li>
+			<li><a class="text-sm text-white font-bold" href="#">About Us</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+				</svg>
+			</li>
+     <li><a class="text-sm text-white font-bold" href="#">Programs</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+				</svg>
+			</li>
+			<li><a class="text-sm text-white font-bold hover:text-gray-500" href="./membership.html">Membership</a></li>
+      <li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+				</svg>
+			</li>
+			<li><a class="text-sm text-white font-bold hover:text-gray-500" href="#">We Offer</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+				</svg>
+			</li>
+			<li><a class="text-sm text-white font-bold hover:text-gray-500" href="./contact.html">Contact</a></li>
+		</ul>
+		<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">Support</a>
+		<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">wasasa</a>
+	</nav>
 
-          <div
-            class="d-inline-block d-xl-none ml-md-0 mr-auto py-3"
-            style="position: relative; top: 3px"
-          >
-            <a href="#" class="site-menu-toggle js-menu-toggle text-white"
-              ><span class="icon-menu h3"></span
-            ></a>
-          </div>
-        </div>
-      </div>
     </header>
+    	<div class="navbar-menu relative z-[1100] hidden">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto z-50">
+			<div class="flex items-center mb-8">
+				<a class="mr-auto text-3xl font-bold leading-none" href="./index.html">
+              <img class="h-12" src="../images/logo.png" alt="">
+				</a>
+				<button class="navbar-close">
+					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+				</button>
+			</div>
+			<div>
+				<ul>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="./index.html">Home</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Programs</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="./membership.html">Membership</a>
+					</li>
+          <li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">We Offer</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mt-auto">
+				<div class="pt-6">
+					<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Support</a>
+					<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">wasasa</a>
+				</div>
+				<p class="my-4 text-xs text-center text-gray-400">
+					<span>Thokoza Swimming Club</span>
+				</p>
+			</div>
+		</nav>
+	</div>
+<section class="h-dvh w-dvw max-h-[80rem] relative">
+        <div class="absolute inset-0 z-[-1]">
+            <!-- <img class="h-full w-full object-cover object-centr" src="../images/hero-bg.jpg" alt=""> -->
+            <video autoplay="true"  muted class="h-full w-full object-cover object-center" src="../images/video.mp4"></video>
+        </div>
+        <div class="max-w-[120rem] mx-auto h-full relative z-[2] px-6 md:px-8 lg:px-10">
+            <div class="h-full w-full  flex flex-col relative space-y-6">
+                <div class="mt-auto mb-0 text-gray-50 md:pb-36 space-y-6">
+                    <span class="font-light text-sm text-accent-500 ">Thokoza Swimming Club</span>
+                    <h1 class="text-3xl md:text-5xl max-w-[30rem] font-medium">Embark on your swimming adventure starting now</h1>
+                    <p class="max-w-[30rem] font-light ml-4 before:content-[''] relative before:absolute before:w-px before:h-full before:left-0 before:top-0 before:-translate-x-4 before:bg-accent-500 md:text-base text-sm"></p>
+                    <div class="md:flex-row flex-col flex gap-4">
+                        <button class="inline-block text-base font-medium px-12 py-2 bg-accent-400 rounded-lg cursor-pointer">Became a member</button>
+                        <button class="inline-block text-base font-medium px-12 py-2 border border-accent-400 rounded-lg text-accent-400 cursor-pointer bg-gray-50/10 backdrop-blur-3xl">Donate Now</button>
+                    </div>
+                </div>
+                <div class="md:absolute md:right-0 md:bottom-32 text-gray-50 my-16">
+                    <ul class="flex md:flex-col items-center justify-center gap-2">
+                        <li class="h-6 w-6 block rounded-full bg-accent-400 text-gray-50">
+                            <a href="" class="block h-full w-full p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full fill-current " viewBox="0 0 24 24"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"></path><path fill="currentColor" d="M18 2a1 1 0 0 1 .993.883L19 3v4a1 1 0 0 1-.883.993L18 8h-3v1h3a1 1 0 0 1 .991 1.131l-.02.112l-1 4a1 1 0 0 1-.858.75L17 15h-2v6a1 1 0 0 1-.883.993L14 22h-4a1 1 0 0 1-.993-.883L9 21v-6H7a1 1 0 0 1-.993-.883L6 14v-4a1 1 0 0 1 .883-.993L7 9h2V8a6 6 0 0 1 5.775-5.996L15 2z"></path></g>
+                                </svg>
+                            </a>
+                        </li>
+  <li class="h-6 w-6 block rounded-full bg-accent-400 text-gray-50">
+    <a href="" class="h-full w-full block p-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-full h-full fill-current "><path d="M256.283 47.553c70.693 0 128 54.682 118 128.931-2.072 15.388-3.422 31.483-4.26 44.759 0 0 2.402 4.253 12.664 4.253 6.071 0 14.895-1.543 27.596-6.354 2.236-.847 4.377-1.241 6.377-1.241 7.918 0 13.615 5.931 14.123 12.271.426 5.31-4.564 11.199-8.371 13.009-13.766 6.542-46.991 10.063-46.991 32.638 0 22.576 22.362 46.656 40.862 63.713S480 360.602 480 360.602s.283 21.57-31.717 29.097c-32 7.524-32.1 5.712-33.25 13.796-2.133 14.979-1.535 21.378-11.248 21.378-1.672 0-3.651-.19-6.002-.558-8.23-1.291-19.239-3.644-31.121-3.644-11.216 0-23.21 2.097-34.379 9.161-23 14.549-41.283 34.114-76.283 34.114s-53-19.565-76-34.114c-11.17-7.065-23.162-9.161-34.379-9.161-11.88 0-22.892 2.353-31.121 3.644-2.352.367-4.33.558-6.002.558-9.71 0-9.115-6.399-11.248-21.378-1.151-8.084-1.25-6.27-33.25-13.795s-32-29.097-32-29.097 45.5-4.012 64-21.068c18.5-17.058 40.862-41.134 40.862-63.71 0-22.575-33.226-26.09-46.991-32.632-3.807-1.81-8.796-7.687-8.371-12.997.507-6.336 6.196-12.251 14.107-12.25 2.004 0 4.152.38 6.393 1.229 12.749 4.829 21.588 6.342 27.662 6.342 10.204 0 12.598-4.273 12.598-4.273-.837-13.275-2.187-29.371-4.259-44.759-10-74.249 47.307-128.931 118-128.931M256.283 32H256c-41.093 0-79.215 16.208-104.591 45.341-23.982 27.534-34.375 63.345-29.265 101.292 1.416 10.51 2.46 21.231 3.21 30.618-3.97-.559-9.686-1.998-17.703-5.034-3.965-1.502-8.017-2.295-12.043-2.295-15.641-.001-28.844 11.852-30.057 27.003-1.027 12.818 8.235 24.393 17.47 28.783 4.251 2.02 9.181 3.578 14.4 5.232 6.707 2.125 14.309 4.532 19.293 7.703 4.147 2.639 4.147 4.168 4.147 5.182 0 8.66-6.191 24.691-35.688 51.888-10.499 9.681-39.055 15.501-54.588 16.897l-14.572 1.311L16 360.603c0 1.679.312 10.546 6.485 20.319 5.246 8.306 16.073 19.283 37.863 24.407a1139.713 1139.713 0 0 0 15.208 3.454c2.306.512 4.555 1.01 6.454 1.453l.081.623c.9 7.004 1.611 12.535 4.392 17.75 2.453 4.6 8.574 12.316 22.015 12.316 2.478 0 5.249-.246 8.472-.751 1.672-.263 3.386-.554 5.2-.863 7.116-1.212 15.182-2.587 23.451-2.587 10.277 0 18.732 2.188 25.846 6.688 4.531 2.867 8.892 5.972 13.509 9.26C202.967 465.481 223.358 480 256 480c32.726 0 53.293-14.582 71.439-27.446 4.576-3.244 8.898-6.309 13.377-9.142 7.113-4.5 15.568-6.688 25.846-6.688 8.27 0 16.334 1.375 23.449 2.586 1.814.311 3.529.602 5.202.864 3.223.505 5.993.751 8.472.751 13.44 0 19.562-7.715 22.015-12.313 2.781-5.214 3.492-10.746 4.392-17.749l.082-.629c1.898-.441 4.148-.941 6.455-1.452 4.023-.892 9.029-2.001 15.206-3.454 21.851-5.139 32.611-16.17 37.79-24.518 6.098-9.828 6.296-18.736 6.273-20.422l-.189-14.501-14.398-1.278c-15.413-1.396-43.8-7.219-54.301-16.9-16.281-15.011-35.688-36.199-35.688-51.893 0-1.014 0-2.546 4.15-5.186 4.985-3.174 12.589-5.584 19.297-7.71 5.217-1.654 10.144-3.217 14.394-5.236 9.236-4.39 18.498-15.978 17.471-28.807-1.215-15.166-14.424-27.046-30.072-27.046-4.021 0-8.068.76-12.027 2.259-8.027 3.041-13.743 4.41-17.705 4.962.747-9.319 1.791-20.12 3.211-30.67 5.111-37.948-5.281-73.509-29.264-101.042C335.498 48.208 297.376 32 256.283 32z" fill="currentColor"></path><path d="M256 229c-20.838 0-40.604-8.29-55.657-23.343a8 8 0 1 1 11.313-11.313C223.688 206.374 239.436 213 256 213c16.387 0 32.15-6.64 44.385-18.698a8 8 0 0 1 11.23 11.395C296.368 220.725 276.617 229 256 229z" fill="currentColor"></path><ellipse cx="208" cy="152" rx="16" ry="24" fill="currentColor"></ellipse><ellipse cx="304" cy="152" rx="16" ry="24" fill="currentColor"></ellipse></svg></a></li><li class="h-6 w-6 block rounded-full bg-accent-400 text-gray-50 p-1"><svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full fill-none stroke-current " viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" fill="none"></line></svg></li></ul></div></div></div>
+  </section>
+</div>
 
-    <div class="hero">
-      <video autoplay muted loop id="background-video">
-        <source src="../images/video.mp4" type="video/mp4" />
-      </video>
-      <div class="ml-20 mt-52" data-aos="fade-up-left" data-aos-duration="1500">
-        <h1 class="clubName sm:text-3xl md:text-7xl xl:text-8xl lg:text-7xl opacity-65 text-transparent">
-          Embark on your <span class="block">swimming adventure</span
-          ><span class="block"> starting now</span>
-        </h1>
-        <h2 class="text-3xl mt-14 text-blue-300">-Thokoza Swimming Club</h2>
+    <!-- end header section -->
+    <!-- featured  Image -->
+<div class="relative z-20 sm:z-auto container">
+  <h2 class="mb-4 text-2xl font-bold text-center mt-7 text-cyan-500">Splash into Fun: Our Vibrant Community</h2>
+  <div class="mx-auto max-w-container px-4 pb-16 sm:px-6 lg:px-8">
+    <div class="relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
+      <div class="flex justify-center">
+        <div class="p-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 7.5h-.75A2.25 2.25 0 004.5 9.75v7.5a2.25 2.25 0 002.25 2.25h7.5a2.25 2.25 0 002.25-2.25v-7.5a2.25 2.25 0 00-2.25-2.25h-.75m0-3l-3-3m0 0l-3 3m3-3v11.25m6-2.25h.75a2.25 2.25 0 012.25 2.25v7.5a2.25 2.25 0 01-2.25 2.25h-7.5a2.25 2.25 0 01-2.25-2.25v-.75" />
+</svg>
+
+        </div>
+        <div class="ml-6">
+          <h2 class="text-sm font-semibold leading-6 text-slate-900">Family-Friendly </h2>
+          <p class="mt-2 text-sm leading-6 text-slate-700">Welcoming atmosphere for all ages.</p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="p-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+            </svg>
+        </div>
+        <div class="ml-6 ">
+          <h2 class="text-sm font-semibold leading-6 text-slate-900">Social Events
+</h2>
+          <p class="mt-2 text-sm leading-6 text-slate-700"> Build connections with other members.
+</p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="p-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3" />
+            </svg>
+
+        </div>
+        <div class="ml-6">
+          <h2 class="text-sm font-semibold leading-6 text-slate-900">Learn and Grow
+</h2>
+          <p class="mt-2 text-sm leading-6 text-slate-700">Develop new skills and confidence.
+</p>
+        </div>
       </div>
     </div>
-    <!-- end header section -->
+  </div>
+</div>
+    <!-- who section -->
 
+            <div class="container-xxl px-6  mx-auto">
+                <div class="lg:flex lg:items-center">
+                    <div class="w-full space-y-12 lg:w-1/2 ">
+                        <div>
+                            <h1 class="text-3xl font-semibold text-cyan-500 capitalize lg:text-4xl">Who we are</h1>
+                        
+                            <div class="mt-2">
+                                <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
+                                <span class="inline-block w-3 h-1 ml-1 rounded-full bg-blue-500"></span>
+                                <span class="inline-block w-1 h-1 ml-1 rounded-full bg-blue-500"></span>
+                            </div>
+                        </div>
+
+                        <div class="md:flex md:items-start md:-mx-4">
+                            <span class="inline-block p-2  text-white bg-blue-500 rounded-xl md:mx-4 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                                </svg>
+                            </span>
+
+                            <div class="mt-1 md:mx-4 md:mt-0">
+                                <h1 class="text-2xl font-semibold text-gray-700 capitalize ">About</h1>
+
+                                <p class="mt-3 text-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="md:flex md:items-start md:-mx-4">
+                            <span class="inline-block p-2  text-white bg-blue-500 rounded-xl md:mx-4  ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                                </svg>
+                            </span>
+
+                            <div class="mt-1 md:mx-4 md:mt-0">
+                                <h1 class="text-2xl font-semibold text-gray-700 capitalize ">Missions</h1>
+
+                                <p class="mt-3 text-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="md:flex md:items-start md:-mx-4">
+                            <span class="inline-block p-2 text-white bg-blue-500 rounded-xl md:mx-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                                </svg>
+                            </span>
+
+                            <div class="mt-1 md:mx-4 md:mt-0">
+                                <h1 class="text-2xl font-semibold text-gray-700 capitalize ">Values</h1>
+
+                                <p class="mt-3 text-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
+                        <img class="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] overflow-visible " src="../images/join_swimmer.png" alt="">
+                    </div>
+                </div>
+
+                <hr class="border-gray-200 my-12 dark:border-gray-700">
+
+        
+            </div>
     <!-- do section -->
     <section class="do_section layout_padding">
       <div class="container mt-10">
@@ -156,7 +319,7 @@
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="3000"
+            data-aos-duration="500"
             >
             <div class="img-box">
               <img src="../images/W (5).png" alt="learntoswim" />
@@ -170,7 +333,7 @@
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="2500"
+            data-aos-duration="400"
           >
             <div class="img-box">
               <img src="../images/W (2).png" alt="" />
@@ -184,7 +347,7 @@
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="2000"
+            data-aos-duration="300"
           >
             <div class="img-box">
               <img src="../images/W (4).png" alt="" />
@@ -197,7 +360,7 @@
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="1500"
+            data-aos-duration="200"
           >
             <div class="img-box">
               <img src="../images/W (1).png" alt="" />
@@ -211,7 +374,7 @@
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="1000"
+            data-aos-duration="100"
             >
             <div class="img-box">
               <img src="../images/W (1).png" alt="learntoswim" />
@@ -225,40 +388,7 @@
 
     <!-- end do section -->
 
-    <!-- who section -->
 
-    <section class="who_section mt-10">
-      <div class="container-xxl">
-        <div class="row">
-          <div class="col-md-5">
-            <div class="img-box">
-              <img src="../images/2.jpg" alt="" />
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2 class="text-4xl">WHO WE ARE?</h2>
-              </div>
-              <p>
-                Thokoza Swimming Club is a premier destination for aquatic
-                excellence and community engagement. Established on October 15,
-                2013, by the Thokoza community, our club is dedicated to
-                promoting water safety, fitness, and personal development. With
-                a commitment to inclusivity, we offer a diverse range of
-                swimming programs tailored to meet the needs of swimmers of all
-                ages and skill levels. It is a registered non-profit
-                organization, which is inspired by a commitment to inclusivity
-                and community empowerment,
-              </p>
-              <div>
-                <a href=""> Read More </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- end who section -->
 
@@ -285,101 +415,161 @@
           </div>
         </div>
       </div>
-    </div>
+      <h2 class="mb-4 text-2xl font-bold text-center mt-7 text-cyan-500">Lessons for All Ages and Skill Levels
+</h2>
 
-    <div class="membership h-screen container flex justify-between bg-blue-100 align-middle flex-wrap">
-      <div class="join w-1/3">
-        <h1 class="text-7xl ">Membership</h1>
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reprehenderit debitis delectus inventore obcaecati cumque labore id provident. Harum labore vel aspernatur a accusantium ipsa dicta adipisci, quasi aliquid perferendis!</p>
-        <button class="h-20 w-auto bg-blue-300 text-center text-3xl rounded-3xl font-bold"> Become a Member</button>
+<div class="flex  items-center justify-centerbg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 px-6 md:px-60">
+    
+ <div class="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
+                        <img class="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] overflow-visible " src="../images/pinklady.png" alt="">
+                    </div>
+  <div class=" border-l-2 border-dashed">
+    <div class="relative w-full">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500">
+        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+      </svg>
+      <div class="ml-6">
+        <h4 class="font-bold text-blue-500">Beginner</h4>
+        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Learn the basics of swimming.<p>
+         <span class="mt-1 block text-sm font-semibold text-blue-500"></span>
       </div>
-      <div class="member-picture w-1/2 left-full">
-        <img class="size-full" src="../images/join_swimmer.png" alt="">
+    </div>
+    <div class="relative w-full">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500">
+        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+      </svg>
+      <div class="ml-6">
+        <h4 class="font-bold text-blue-500">Intermediate </h4>
+        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Improve technique and endurance</p>
+        <span class="mt-1 block text-sm font-semibold text-blue-500"></span>
       </div>
+    </div>
+    <div class="relative w-full">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500">
+        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+      </svg>
+      <div class="ml-6">
+        <h4 class="font-bold text-blue-500">Advanced</h4>
+        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Develop Competitive skills</p>
+        <span class="mt-1 block text-sm font-semibold text-blue-500"></span>
+      </div>
+    </div>
+    <div class="relative w-full">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500">
+        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+      </svg>
+      <div class="ml-6">
+        <h4 class="font-bold text-blue-500">Adult Lessons</h4>
+        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Learn to swim or ehance technique</p>
+        <span class="mt-1 block text-sm font-semibold text-blue-500"></span>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
 
     <!-- end work section -->
 
-    <!-- footer section -->
-    <div
-      class="container-xxl bg-primary text-light footer wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5 px-lg-5">
-        <div class="row g-5">
-          <div class="col-md-6 col-lg-3">
-            <h4 class="text-white mb-4">Address</h4>
-            <p>
-              <i class="fa fa-map-marker-alt me-3"></i>51 Matsimela Street,
-              Thokoza Gardens, SA
-            </p>
-            <p><i class="fa fa-phone-alt me-3"></i>+27 86 558 9183</p>
-            <p>
-              <i class="fa fa-envelope me-3"></i>Thokozaswimmingclub@gmail.com
-            </p>
-            <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <h4 class="text-white mb-4">Quick Link</h4>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Memebership</a>
-            <a class="btn btn-link" href="">Events</a>
-            <a class="btn btn-link" href="">Gallery</a>
-          </div>
-          <div class="col-md-6 col-lg-3"></div>
-          <div class="col-md-6 col-lg-3">
-            <h4 class="text-white mb-4">Join Us!</h4>
-            <p>lkjhgf</p>
-            <div class="position-relative w-100 mt-3">
-              <input
-                class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
-                type="text"
-                placeholder="Your Email"
-                style="height: 48px"
-              />
-              <button
-                type="button"
-                class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
-              >
-                <i class="fa fa-paper-plane text-primary-gradient fs-4"></i>
-              </button>
-            </div>
-          </div>
+    <!-- membership -->
+     <div class="container membership">
+        <div class="membershipText text-center ">
+          <h2 class="font-bold text-3xl rounded-6xl">Membership</h2>
+          <p class="font-semibold text-black sm:text-red-700 md:text-red-700">
+           "Dive into our swimming club to relieve pain and embrace life fully through the power of the water."
+          </p>
+          <a href="../src/membership.html" class="btn btn-primary opacity-75">Join Now</a>
+        </div>
+        
+     </div>
+     <!-- end membership -->
+
+ <!-- footer section -->
+<footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+  <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+      <img src="../images/logo.png" class="mr-5 h-6 sm:h-9" alt="logo" />
+        <p class="max-w-xs mt-4 text-sm text-gray-600">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
+        </p>
+        <div class="flex mt-8 space-x-6 text-gray-600">
+          <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+            <span class="sr-only"> Facebook </span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
+            </svg>
+          </a>
+          <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+            <span class="sr-only"> Instagram </span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clipRule="evenodd" />
+            </svg>
+          </a>
+          <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+            <span class="sr-only"> Twitter </span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="container px-lg-5">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy;
-              <a class="border-bottom" href="#">Thokoza Swimming club</a>, All
-              Right Reserved.
-
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Designed By
-              <a class="border-bottom" href="https://htmlcodex.com"
-                >Tech Hive</a
-              >
-            </div>
-            <div class="col-md-6 text-center text-md-end"></div>
-          </div>
+      <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <p class="font-medium text-cyan-500">
+            Company
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-sm text-black">
+            <a class="hover:opacity-75" href="./about.html"> About </a>
+            <a class="hover:opacity-75" href="./about.html"> Meet the Team </a>
+            <a class="hover:opacity-75" href="./about.html"> History </a>
+          </nav>
+        </div>
+        <div>
+          <p class="font-medium text-cyan-500">
+            Quick Link
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-sm text-black">
+            <a class="hover:opacity-75" href="./about.html"> About us </a>
+            <a class="hover:opacity-75" href="./contact.html"> Contact us </a>
+            <a class="hover:opacity-75" href="./membership.html"> Membership </a>
+            <a class="hover:opacity-75" href="./support.html"> Support </a>
+            <a class="hover:opacity-75" href="./gallery.html"> Gallery </a>
+          </nav>
+        </div>
+        <div>
+          <p class="font-medium text-cyan-500">
+            Helpful Links
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-sm text-black">
+            <a class="hover:opacity-75" href="./contact.html"> Contact </a>
+            <a class="hover:opacity-75" href=""> FAQs </a>
+            <a class="hover:opacity-75" href=""> Live Chat </a>
+          </nav>
+        </div>
+        <div>
+          <p class="font-medium text-cyan-500">
+            Legal
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-sm text-black">
+            <a class="hover:opacity-75" href=""> Privacy Policy </a>
+            <a class="hover:opacity-75" href=""> Terms &amp; Conditions </a>
+            <a class="hover:opacity-75" href=""> Returns Policy </a>
+            <a class="hover:opacity-75" href=""> Accessibility </a>
+          </nav>
         </div>
       </div>
     </div>
+    <p class="mt-8 text-xs text-gray-800">
+      © 2024 
+      <a class="border-bottom" href="./index.html">Thokoza Swimming club</a>, All
+                Right Reserved.
+                Designed By
+                <a class="border-bottom" href="https://github.com/Odarell35"
+                  >Lerato Mawasha</a
+                >
+    </p>
+  </div>
+</footer>
 
     <!-- end footer section -->
 
@@ -389,18 +579,53 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <!-- navbar script-->
-
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/jquery.sticky.js"></script>
-    <script src="./js/main.js"></script>
-
+  <script src="./script.js"></script>
     <!-- aoa animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script>
+// Burger menus
+document.addEventListener('DOMContentLoaded', function() {
+    // open
+    const burger = document.querySelectorAll('.navbar-burger');
+    const menu = document.querySelectorAll('.navbar-menu');
+
+    if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    // close
+    const close = document.querySelectorAll('.navbar-close');
+    const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+    if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+});
+</script>
   </body>
 </html>
