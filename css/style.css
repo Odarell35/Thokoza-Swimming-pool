@@ -109,7 +109,7 @@ a:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: none;
   border-radius: 100%;
   border: 10px solid #0cc0df;
 }
@@ -135,6 +135,23 @@ a:hover {
   height: 90%;
   z-index: 3;
   background-size: cover;
+}
+.we_offer{
+  position: relative;
+  background-image: url(../images/bg\ \ \(3\).jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+}
+.we_offer::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (last value) as needed */
 }
 .work_section .work_container {
   display: -webkit-box;
